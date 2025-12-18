@@ -34,11 +34,6 @@ let tasks = [
     completed: true,
   },
   {
-    id: 10,
-    description: "Deploy the latest build to the staging environment",
-    completed: true,
-  },
-  {
     id: 6,
     description: "Add pagination support to the tasks API",
     completed: false,
