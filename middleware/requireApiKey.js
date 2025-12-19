@@ -1,3 +1,5 @@
+import { ApiError } from "../errors";
+
 export const requireApiKey = (req, res, next) => {
   if (process.env.NODE_ENV === "development") {
     return next();
