@@ -23,5 +23,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Verify API_KEY exists
+        run: |
+          if [ -z "$API_KEY" ]; then
+            echo "API_KEY is missing"
+            exit 1
+          else
+            echo "API_KEY is set"
+          fi
+
       - name: Run tests
         run: npm test
