@@ -1,8 +1,13 @@
-import { ApiError } from "../errors.js";
+console.log(process.env.NODE_ENV);
 
 export const requireApiKey = (req, res, next) => {
-  if (req.headers["x-api-key"] !== "supersecret123") {
+  if (process.env.NODE_ENV === "development") {
+    return next();
+  }
+
+  if (req.headers["x-api-key"] !== process.env.API_KEY) {
     throw new ApiError(401, "Unauthorized");
   }
+
   next();
 };

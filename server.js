@@ -1,3 +1,4 @@
+import "dotenv/config";
 import express from "express";
 import tasksRoutes from "./tasksRoutes.js";
 import { logger } from "./middleware/logger.js";
