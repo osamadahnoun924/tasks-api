@@ -21,5 +21,8 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Echo var
+        run: echo ${{ vars.API_KEY }}
+
       - name: Run tests
         run: npm test
