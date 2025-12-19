@@ -1,2 +1,30 @@
-node_modules
+# Dependencies
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# Logs & Temp Files
+*.log
+*.tmp
+*.swp
+
+# Build & Distribution
+/dist
+/build
+
+# Environment Variables (Sensitive Data)
 .env
+.env.local
+
+# IDE & OS Specific Files
+.DS_Store
+Thumbs.db
+
+# Express Specific (Optional)
+# If you have a 'public' folder for static assets, you might ignore its contents if generated
+# /public/images
+# /public/css
+
+# Test Reports (If applicable)
+/coverage
+/reports
