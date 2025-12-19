@@ -1,5 +1,3 @@
-console.log(process.env.NODE_ENV);
-
 export const requireApiKey = (req, res, next) => {
   if (process.env.NODE_ENV === "development") {
     return next();

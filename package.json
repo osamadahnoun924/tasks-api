@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"No tests yet\"",
-    "dev": "NODE_ENV=development node server.js",
-    "start": "NODE_ENV=production node server.js"
+    "dev": "node server.js"
   },
   "keywords": [],
   "author": "",
